@@ -1,0 +1,28 @@
+.movieRow{
+    margin-bottom: 30px; /* Margins between items ( For example: recommended and Top movies. */
+}
+.movieRow h2{
+    margin: 0px 0px 0px 30px; /* Make sure the tittle is not lean. */
+
+}
+.movieRow--listArea {
+    overflow-x: hidden; /* Make sure that everything that not fix in the screen (horizontal - x) won't appear (no scrolling). */
+    padding-left: 30px;
+}
+.movieRow--list{
+    width: 9999px;
+}
+.movieRow--item{
+    display: inline-block; /* every item side by side */
+    width: 150px; /* every movie picture has 150px */
+    cursor: pointer;
+}
+.movieRow--item img{
+    width: 100%; /* every item will have 100% of the area set up in .movieRow--item */
+    transform: scale(0.9);  /* set up the CSS to 90% of size to give some effect later */
+    transition: all ease 0.2s; /* every transition (all) will be type ease and last 0.2s */
+}
+.movieRow--item img:hover{
+   
+    transform: scale(1);  /* set up effect to come back to 100% of size after put the mouse on picture */
+}
