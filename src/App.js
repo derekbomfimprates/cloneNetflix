@@ -3,12 +3,15 @@ import Tmdb from './Tmdb';
 import MovieRow from'./components/MovieRow';
 import './App.css'
 import FeaturedMovie from './components/FeaturedMovie';
+import Header from './components/Header';
+import Footer from "./components/Footer";
 
 export default () => {
 
 
   const [movieList, setMovieList] = useState([]); // set to start empty
   const [featuredData, setFeaturedData] = useState(null); // I am going to start it as null
+  const [colorHeader, setColorHeader] = useState(false);
 
   useEffect(() =>{
     const  loadAll = async()=>{
@@ -28,6 +31,22 @@ export default () => {
     }
 loadAll();
   }, []);
+
+  useEffect(()=>{
+    const scrollistener =()=>{
+      if(window.scrollY > 10){
+        setColorHeader(true);
+      }else{
+        setColorHeader(false);
+      }
+
+      
+      }
+      window.addEventListener('scroll', scrollistener);
+      return()=>{
+        window.removeEventListener('scroll', scrollistener);
+    }
+  }, []);
   return (
     /*   
     Header
@@ -37,6 +56,7 @@ loadAll();
     We are going to use map
     */
   <div className="page">
+    <Header color={colorHeader}/>
   
     {featuredData &&  
     <FeaturedMovie item={featuredData} /> // when the component exist i will show it and send the item!
@@ -47,7 +67,7 @@ loadAll();
         <MovieRow key={key} title= {item.title} items={item.items}/>
       ))}
     </section>
- 
+ <Footer />
     </div>
     );
 }
