@@ -1,7 +1,9 @@
-# cloneNetflix
+# Clone Netflix
+
 First page clone
 
 # Getting started
+
 ## Prerequisites
 
 npm
@@ -31,5 +33,5 @@ https://www.themoviedb.org/documentation/api
 
 
 
-<img width="1440" alt="Screenshot 2021-10-19 at 16 22 57" src="https://user-images.githubusercontent.com/75395170/137941907-943fb01b-23da-4123-b18a-bf5cfc32687f.png">
-<img width="1440" alt="Screenshot 2021-10-19 at 16 23 04" src="https://user-images.githubusercontent.com/75395170/137941922-623a15b6-76f7-4bfc-810a-1106ba00956c.png">
+<img width="1440" alt="Screenshot 2021-10-19 at 16 22 57" src="https://user-images.githubusercontent.com/75395170/137943435-30f511ca-e7f2-4c29-854e-5aaa258dcb72.png">
+<img width="1434" alt="Screenshot 2021-10-19 at 16 23 04" src="https://user-images.githubusercontent.com/75395170/137943450-82455e2c-b9d0-4b06-a882-6a274c5d44bb.png">
