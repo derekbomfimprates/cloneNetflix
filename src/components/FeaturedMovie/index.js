@@ -25,9 +25,9 @@ export default ({ item }) => {
           <div className="featured--info">
               <div className="featured--vote_average">
                   {item.vote_average} point{item.vote_average !== 1 ? 's' : ''} </div>
-                  <di className="featured--year">
+                  <div className="featured--year">
                       {firstDate.getFullYear()}
-                  </di>
+                  </div>
                   <div className="featured--seasons">
                       {item.number_of_seasons} season{item.number_of_seasons !== 1 ? 's' : ''}
                   </div>
