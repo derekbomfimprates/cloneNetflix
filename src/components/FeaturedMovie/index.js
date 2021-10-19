@@ -9,7 +9,10 @@ export default ({ item }) => {
         genres.push(item.genres[i].name);
     }
 
-
+let overview=item.overview;
+if(overview.length>200){
+  overview=overview.substring(0,200)+'...';
+}
   return (
     <section
       className="featured"
@@ -32,7 +35,7 @@ export default ({ item }) => {
                       {item.number_of_seasons} season{item.number_of_seasons !== 1 ? 's' : ''}
                   </div>
                   <div className='featured--overview'>
-                      {item.overview}
+                      {overview}
                   </div>
                   <div className="featured--buttons">
                         <a href={`/watch/${item.id}`} className="featured--watch">▶︎ Watch</a> 
