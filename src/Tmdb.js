@@ -1,5 +1,5 @@
-const API_KEY='6ff565c8fad9afdeac71677220eae7af';
-const API_BASE= 'https://api.themoviedb.org/3';
+const API_KEY='API_KEY';
+const API_BASE= 'API_BASE';
 
 
 /*
